@@ -1,0 +1,217 @@
+@import '../../index.css';
+
+
+#skills{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Poppins;
+    margin: 0px auto;
+    margin-top: 200px;
+}
+
+
+.skillTitle{
+    text-align: center;
+    color: var(--accent-color);
+    font-family:'Poppins';
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.625rem;
+}
+
+.skillDesc{
+    color:var(--text-color);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.05rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.045rem;
+    margin-top: 1rem;
+}
+
+.skillDesc span{
+    color: var(--accent-color);
+}
+
+.skillCards{
+    margin: 3rem auto;
+    width: 100vw;
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    column-gap: 3rem;
+}
+
+.skillCard{
+    display: flex;
+    width: 15.5rem;
+    min-width: 12.5rem;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 1rem;
+    background:var(--sec-background-color);
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+.skillCard img{
+    height: 10rem;
+    align-self:stretch;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    transition:  0.3s linear;
+}
+.skillCard video{
+    height: 10rem;
+    align-self:stretch;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    transition:  0.3s linear;
+    pointer-events: none;
+}
+
+.skillCard:hover img{
+    transform: scale(1.02);
+    
+}
+.skillbarText h2{
+    color: var(--accent-color);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.skillbarText p{
+    color: var(--text-color);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+/* media query */
+
+@media screen and (min-width: 1024px) {
+    #skills {
+        max-width: 65rem;
+        margin-top: 200px;
+    }
+    .skillCards {
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 3rem;
+    }
+    .skillCard .skillImg{
+        width: auto;
+        height: 162px;
+        object-fit: cover;
+    }
+
+}
+
+/* Tablet (Medium screens, 768px to 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #skills {
+        margin: 0 auto;
+        margin-top: 150px;
+    }
+    .skillTitle {
+        font-size: 2.5rem;
+    }
+    .skillDesc {
+        font-size: 1rem;
+        padding: 0 2rem;
+        text-align: center;
+    }
+    .skillCards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 2rem;
+        margin: 3rem auto;
+    }
+    .skillCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skillCard .skillImg{
+        width: auto;
+        height: 162px;
+        object-fit: cover;
+    }
+    
+}
+
+/* Mobile (Small screens, 767px and down) */
+@media screen and (max-width: 767px) {
+    #skills {
+        margin-top: 100px;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .skillTitle {
+        font-size: 2rem;
+    }
+    #skills .skillDesc {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+        text-align: left;
+    }
+    .skillCards {
+        flex-direction: column;
+        row-gap: 1.5rem;
+        column-gap: 0;
+        margin: 2rem auto;
+        right: 1rem;
+    }
+    .skillCard .skillImg{
+        width: auto;
+        height: 162px;
+        object-fit: cover;
+    }
+    .skillCard {
+        width: 15.5rem;
+        min-width: 12.5rem;
+        margin: 0 auto;
+    }
+    .skillCard img {
+        height: auto;
+        width: 100%;
+    }
+    .skillCard video{
+        height: auto;
+        width: 100%;
+        align-self:stretch;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        transition:  0.3s linear;
+        pointer-events: none;
+    }
+    .skillbarText h2 {
+        font-size: 1.2rem;
+    }
+    .skillbarText p {
+        font-size: 0.9rem;
+    }
+}

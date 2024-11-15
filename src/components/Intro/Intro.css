@@ -1,0 +1,239 @@
+@import '../../index.css';
+
+#intro{
+    /* height: calc(100vh-125px); */
+    width: 100%;
+    max-width: 82vw;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    /* margin-top: 2rem; */
+    justify-content: center;
+}
+
+
+
+.bg{
+    width: fit-content;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    right: 0rem;
+    height: 60vh;
+}
+
+button .introLink{
+    display: flex;
+    align-items: center;
+}
+.introBtn{
+    display: flex;
+    width: 300px;
+    padding: 0.75rem 1.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    background-color: var(--accent-color);
+    border: none;
+    outline: none;
+    color: var(--btn-color);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.20);
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 0.25rem;
+    text-wrap: nowrap;
+    cursor: pointer;
+}
+
+.introBtn a{
+    color: var(--btn-color);
+}
+
+.introBtn img{
+    margin-right: 0.5rem;
+    width: 32px;
+}
+
+.introContent{
+    height: 60vh;
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hello{
+    font-family: "Bubblegum Sans";
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.introName{
+    color:var(--accent-color);
+    margin-top: -0.75rem;
+    font-family: Poppins;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 4.5rem; 
+}
+
+.introWork{
+    color:var(--text-color);
+    margin-top: -1rem;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+.introPro{
+    color:var(--text-color);
+    margin-top: -0.75rem;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3.625rem;
+    text-wrap: nowrap;
+    user-select: none;
+}
+
+/* media Query */
+@media screen and (min-width: 1200px) {
+    #intro{
+        /* margin-top: 2rem; */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #intro {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    .introContent {
+        height: 60vh;
+        width: 50vw;
+    }
+    .bg {
+        height: 60vh;
+        width: 30vw;
+        object-fit: contain;
+    }
+    .introName{
+        text-wrap: nowrap;
+    }
+}
+
+@media (min-width:1000px){
+    #intro {
+        flex-direction: column;
+        row-gap: 2rem;
+        margin: 0rem auto;
+        margin-top: 2rem;
+    }
+}
+
+/* Tablet (Medium screens, 768px to 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #intro{
+        margin: 0rem auto;
+        margin-top: 2rem;
+    }
+    .introContent {
+        height: 58vh;
+        width: 100%;
+    }
+    .bg {
+        height: 55vh;
+        width: 25vw;
+        object-fit: contain;
+    }
+    .introName {
+        font-size: 3rem;
+        text-wrap: nowrap;
+    }
+    .hello {
+        font-size: 2rem;
+    }
+    .introWork {
+        font-size: 1.2rem;
+    }
+    .introPro {
+        font-size: 1.5rem;
+    }
+    .introBtn{
+       width: 300px;
+    }
+}
+
+
+
+/* Mobile (Small screens, 767px and down) */
+@media screen and (max-width: 767px) {
+    #intro {
+        flex-direction: column;
+        row-gap: 1rem;
+        margin: 0rem auto;
+        margin-top: 1.5rem;
+        align-items: center;
+    }
+    .introContent {
+        height: auto;
+        width: 100%;
+        margin: 0rem 3rem;
+        left: 2rem;
+    }
+    .bg {
+        height: 50vh;
+        left: 1rem;
+        margin-left:0 auto;
+        position: static;
+    }
+    .introName {
+        font-size: 2rem;
+        line-height: normal;
+        text-wrap: wrap;
+    }
+    .hello {
+        font-size: 1.5rem;
+    }
+    .introWork {
+        font-size: 1rem;
+        line-height: normal;
+    }
+    .introPro {
+        font-size: 1.10rem;
+        text-wrap: wrap;
+        line-height: normal;
+    }
+    .introBtn{
+        margin-top: -0.25rem;
+        width: auto;
+    }
+    
+}
+    
+
+@media   (max-width:340px){
+    #intro{
+        margin-top: 2rem;
+    }
+    .bg{
+        height: 40vh;
+    }
+    .introBtn{
+        width: 200px;
+        font-size: 1rem;
+    }
+    .introBtn img{
+        display: none;
+    }
+    .introPro {
+        font-size: 1rem;
+        /* text-wrap: wrap; */
+        line-height: normal;
+    }
+}

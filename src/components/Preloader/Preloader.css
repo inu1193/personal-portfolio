@@ -1,0 +1,17 @@
+@import '../../index.css';
+
+.preLoader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12%;
+    user-select: none;
+}
+
+.preLoader .para{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color:var(--text-color);
+}

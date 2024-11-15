@@ -1,0 +1,147 @@
+@import '../../index.css';
+
+#slid{
+    
+    overflow: hidden;
+    width: 100%;
+    max-width: 75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: Poppins;
+    margin: 0px auto;
+    margin-top: 200px;
+}
+
+
+.scrollSlider{
+    display: flex;
+    flex-direction: row;
+}
+
+#slid .sliderImg{
+    /* height: 20rem; */
+    width: 30rem;
+    object-fit: fill;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.wood{
+    opacity: 0;
+}
+
+#slid .skillTitle{
+    text-align: center;
+    color: var(--accent-color);
+    font-family:'Poppins';
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.625rem;
+}
+
+#slid .skillDesc{
+    color:var(--text-color);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.05rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.045rem;
+    margin-top: 1rem;
+}
+
+#slid .head1{
+    color: var(--text-color);
+}
+
+@media screen and (min-width: 1024px) {
+    #slid{
+        /* max-width: 70rem; */
+        margin-top: 200px;
+    }
+    #slid .skillTitle {
+        font-size: 2.5rem;
+    }
+    #slid .skillDesc {
+        font-size: 1rem;
+        padding: 0 2rem;
+    }
+   
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #slid {
+        margin: 1rem auto;
+        margin-top: 100px;
+        text-align: center; 
+    }
+    #slid .skillTitle {
+        font-size: 2.5rem;
+    }
+    #slid .skillDesc {
+        font-size: 1rem;
+        padding: 0 2rem;
+    }
+    #slid .sliderImg{
+        object-fit: fill;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #slid {
+        margin: 1rem auto;
+        margin-top: 100px;
+        text-align: center; 
+        width: 100%;
+        max-width: 100vw;
+    }
+    main{
+        position: relative;
+    }
+    .wood{
+        opacity: 1;
+        position: absolute;
+        z-index: -3;
+    }
+
+
+    #slid .skillTitle {
+        font-size: 2rem;   
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+    #slid .skillDesc {
+        font-size: 0.9rem;
+        /* padding: 0 1rem; */
+        text-align: left;
+        margin: 0 auto;
+        max-width: 80vw;
+    }
+
+    #slid .sliderImg{
+        /* height: 20rem; */
+        width: 25rem;
+    }
+    
+}
+
+
+@media screen and (max-width:500px){
+    .scroller{
+        width: 100%;
+        max-width:100vw;
+        margin:auto;
+        margin-top: 2.5rem;
+        overflow: hidden;
+    }
+    
+}

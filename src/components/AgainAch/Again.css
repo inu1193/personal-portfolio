@@ -1,0 +1,71 @@
+.achIn{
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    display: flex;
+}
+
+.achImgMain{
+    display:inline-block ;
+    margin-top: 2.5rem;
+    animation: slide 20s linear infinite;
+}
+
+.achImgMain span{
+    margin:0 1rem ;
+}
+
+
+.achImgMain:hover{
+    animation-play-state: paused;
+}
+
+.achIn::before, .achIn::after{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.achIn::before{
+    background:linear-gradient(to left, rgba(255,255,255,0), gray);
+    left: 0;
+}
+.achIn::after{
+    background:linear-gradient(to right, rgba(255,255,255,0), gray);
+    right: 0;
+}
+
+
+.achImg .achImgs{
+    object-fit: cover;
+    height: 20rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+}
+
+.achImgMain{
+    white-space: nowrap;
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(-100);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+@media screen and (max-width:746px){
+    
+.achImg .achImgs{
+    object-fit: cover;
+    height: 12rem;
+    width: 16rem;
+    border-radius: 0.25rem;
+}
+}

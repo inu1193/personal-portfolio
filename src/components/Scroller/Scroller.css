@@ -1,0 +1,92 @@
+@import '../../index.css';
+
+.scroller{
+    width: 100%;
+    max-width: 75vw;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    overflow: hidden;
+}
+
+.ach .skillDesc{
+    text-align: center;
+    padding: 0 0.25rem;
+}
+
+#ach{
+    margin-top: 200px;
+}
+
+.color{
+    color: var(--sec-text-color);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.scroller_inner{
+    padding-block: 1rem;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 1rem;
+}
+
+.scroller{
+    overflow: hidden;
+    -webkit-mask: linear-gradient( 90deg , transparent , var(--background-color) 5%  , var(--background-color) 95% , transparent);
+    mask: linear-gradient(90deg, transparent ,  var(--background-color) 10%  , var(--background-color) 90% , transparent);
+    
+}
+.scroller_inner{
+    width: max-content;
+    flex-wrap: nowrap;
+    animation:  scroll 30s linear infinite;
+}
+
+.scroller_inner:hover{
+    animation-play-state: paused;
+}
+
+.dark-theme .scroller{
+    -webkit-mask: linear-gradient( 90deg , transparent , var(--background-color) 0%  , var(--background-color) 100% , transparent);
+    mask: linear-gradient(90deg, transparent ,  var(--background-color) 0%  , var(--background-color) 100% , transparent);
+}
+
+@keyframes scroll{
+    to{
+        transform: translateX(calc(-50% - 0.5rem));
+    }
+}
+
+@media(max-width:746px){
+    #ach{
+        margin-top: 140px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .scroller{
+        width: 100%;
+        max-width:100vw;
+        margin:auto;
+        margin-top: 2.5rem;
+        overflow: hidden;
+    }
+    .scroller{
+        overflow: hidden;
+        -webkit-mask: linear-gradient( 90deg , transparent , var(--background-color) 5%  , var(--background-color) 95% , transparent);
+        mask: linear-gradient(90deg, transparent ,  var(--background-color) 10%  , var(--background-color) 90% , transparent);
+        
+    }
+    .scroller_inner:hover{
+        animation-play-state:running;
+    }
+    #ach .skillDesc {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+        text-align: left;
+    }
+    .scroller_inner{
+        animation:  scroll 40s linear infinite;
+    }
+}

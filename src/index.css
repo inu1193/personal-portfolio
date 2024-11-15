@@ -1,0 +1,103 @@
+:root{
+    --background-color:#f5f5f5;
+    --sec-background-color:#fff;
+    --text-color:#333;
+    --sec-text-color:#000;
+    --accent-color:#009688;
+    --accent-hover-color:#00776C;
+    --accent-focus-color:#00635A;
+    --input-color:#949494;
+    --input-bg-color:#EAE8E8;
+    --li-footer-color:#a3a3a3;
+    --footer-hr-color:#ababab;
+    --footer-sicon-color:#f6f6f6;
+    --label-color:#000;
+    --btn-color:#f5f5f5;
+    --place-text:#606060;
+    --mode-color:#ececec;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark-theme{
+    --background-color:#2C2C2C;
+    --sec-background-color:#1a1a1a;
+    --text-color:#E0E0E0;
+    --sec-text-color:#f6f6f6;
+    --accent-color:#009688;
+    --accent-hover-color:#00776C;
+    --accent-focus-color:#00635A;
+    --input-color:#cccccc;
+    --input-bg-color:#313131;
+    --li-footer-color:#a3a3a3;
+    --footer-hr-color:#ababab;
+    --footer-sicon-color:#333333;
+    --label-color:#fff;
+    --btn-color:#f5f5f5;
+    --place-text:#7a7a7a;
+    --mode-color:#2d2d2d;
+}
+
+
+.light-theme{
+    --background-color:#f5f5f5;
+    --sec-background-color:#fff;
+    --text-color:#333;
+    --sec-text-color:#000;
+    --accent-color:#009688;
+    --accent-hover-color:#00776C;
+    --accent-focus-color:#00635A;
+    --input-color:#949494;
+    --input-bg-color:#EAE8E8;
+    --li-footer-color:#a3a3a3;
+    --footer-hr-color:#ababab;
+    --footer-sicon-color:#f6f6f6;
+    --label-color:#000;
+    --btn-color:#f5f5f5;
+    --place-text:#606060;
+    --mode-color:#ececec;
+}
+
+
+body{
+    background-color:var(--background-color);
+}
+
+.navBtn{
+    display: flex;
+    padding: 0.75rem 1.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    background-color: var(--accent-color);
+    border: none;
+    outline: none;
+    color: var(--btn-color);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.20);
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 0.25rem;
+    text-wrap: nowrap;
+    cursor: pointer;
+}
+
+.navBtn:hover{
+    background:var(--accent-hover-color);
+    transition: 0.4s linear
+}
+
+.navBtn:focus{
+    background:var(--accent-focus-color);
+}
+
+
+/* media query */
+
+@media screen and(max-width:1200) {
+    .navBtn{
+        padding: 0.5rem 1.25rem;
+    }
+}

@@ -1,0 +1,24 @@
+@import '../../index.css';
+
+.introProHead{
+    color:var(--accent-color);
+    margin-top: -0.75rem;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 3.625rem;
+}
+
+
+@media(max-width:1024px){
+    .introProHead{
+        font-size: 1.5rem;
+        margin-top: -1rem;
+    }
+}
+@media(max-width:747px){
+    .introProHead{
+        font-size: 1rem;
+        margin-top: -1.5rem;
+    }
+}
