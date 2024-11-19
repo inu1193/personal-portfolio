@@ -50,13 +50,13 @@ useEffect(() => {
         // style={{display:isLoading? 'none':'block'}}
         >
           <Navbar/>
-          <Bot/>
+          {/* <Bot/> */}
           <Marquee/>
           <Intro/>
           <About/>
           <Laptop/>
           {/* <Portfolio/> */}
-          <SliderA/>
+          {/* <SliderA/> */}
           {/* <Acheivement/> */}
           {/* <Again/> */}
           {/* <Scroller/> */}

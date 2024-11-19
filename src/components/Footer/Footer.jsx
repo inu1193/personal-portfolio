@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Link} from 'react-router-dom'
 import linkedIn from '../../assets/LinkedInlinkedin.png'
 import gitHub from '../../assets/GitHubgithubTeal.png'
 import behance from '../../assets/Behancebehance.png'
-import twitter from '../../assets/Twittertwitter.png'
+import twitter from '../../assets/x.png'
 import insta from '../../assets/instagraminsta.png'
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
@@ -19,7 +19,7 @@ import Rating from '../Rating/Rating'
 
 
 const Footer = () => {
-
+  const year = new Date().getFullYear();
   const{theme, toggleTheme} = useTheme();
 
   useEffect(() => {
@@ -28,7 +28,7 @@ const Footer = () => {
       mirror:false
     });
   }, [])
-
+  
  
   return (
     <section id="footer" className={theme==='dark'?'dark-theme':'light-theme'}>
@@ -43,8 +43,8 @@ const Footer = () => {
             <ul>
               <ScrollLink to='intro'  smooth='true' offset={-140} duration={500} ><li>Home</li></ScrollLink>
               <ScrollLink to='skills'  smooth='true' offset={-140} duration={500} ><li>About</li></ScrollLink>
-              <ScrollLink to='portfolio'  smooth='true' offset={-140} duration={500} ><li>Portfolio</li></ScrollLink>
-              <ScrollLink to='ach'  smooth='true' offset={-140} duration={500} ><li>Achievement</li></ScrollLink>
+              <ScrollLink to='portfolio'  smooth='true' offset={-140} duration={500} ><li>Project</li></ScrollLink>
+              {/* <ScrollLink to='ach'  smooth='true' offset={-140} duration={500} ><li>Achievement</li></ScrollLink> */}
               
             </ul>
         </div>
@@ -54,7 +54,7 @@ const Footer = () => {
                 <li>
                 <Router>
                 <Link
-                  to="https://www.linkedin.com/in/yathishshettigar"
+                  to="https://www.linkedin.com/in/syed-inayath-49401a184/"
                   target="_blank"
                 >
                  <Tippy content='linkedIn'>
@@ -66,7 +66,7 @@ const Footer = () => {
                 <li>
                 <Router>
                 <Link
-                  to="https://github.com/yathish1204"
+                  to="https://github.com/innu1193"
                   target="_blank"
                 >
                  <Tippy content='gitHub'>
@@ -75,7 +75,7 @@ const Footer = () => {
                 </Link>
               </Router>     
                 </li>
-                <li>
+                {/* <li>
                 <Router>
                 <Link
                   to="https://www.behance.net/yathishshettigar"
@@ -86,15 +86,15 @@ const Footer = () => {
                     </Tippy>
                 </Link>
               </Router>     
-                </li>
+                </li> */}
                 <li>
                 <Router>
                 <Link
-                  to="https://x.com/YathishShe57208?t=iFvwUTfSou16Fb42c2Ilhg&s=08"
+                  to="https://x.com/_inayath_"
                   target="_blank"
                 >
                  <Tippy content='twitter'>
-                        <img  loading='lazy' src={twitter} alt="" />
+                        <img  loading='lazy' src={twitter} alt="" className='xlogo' />
                     </Tippy>
                 </Link>
               </Router>     
@@ -102,7 +102,7 @@ const Footer = () => {
                 <li>
                 <Router>
                 <Link
-                  to="https://www.instagram.com/y_shettigar2001?utm_source=qr&igsh=MWFwc2s2ZHR3NTJi"
+                  to="https://www.instagram.com/_.inayath._/"
                   target="_blank"
                 >
                  <Tippy content='instagram'>
@@ -115,7 +115,7 @@ const Footer = () => {
         </div>
         <Rating/>
         <hr />
-        <p >copyright ©️ 2024 Syed Inayath. All rights reserved.</p>
+        <p >copyright ©️ {year} Syed Inayath. All rights reserved.</p>
     </section>
   )
 }

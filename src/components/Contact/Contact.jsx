@@ -16,7 +16,7 @@ const Contact = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "7422b072-d0cf-4747-b6ec-36639647b7c8");
+    formData.append("access_key", "d7e64799-33d4-47a9-a073-b0b8a6d38b42");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -57,21 +57,21 @@ const Contact = () => {
           </div>
           <ul>
             <li>
-              <a href="mailto:yathish120420@gmail.com">
+              <a href="mailto:inayath2410@gmail.com">
                 <img src={email} alt="email" />
-                yathish120420@gmail.com
+                inayath2410@gmail.com
               </a>
             </li>
             <li>
               <img src={phone} alt="phone number" />
-              +91 8296302220
+              +91 7019023285
             </li>
             <li>
               <img src={gps} alt="location"  />
-              Jayanagar East End, Bengaluru
+              Vijaynagar, Bengaluru
             </li>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.8512408013685!2d77.59425217454579!3d12.917281016067934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae151cd5d1e9bb%3A0x3beba853f26b4e4a!2sSri%20Navadurga%20PG%20for%20Gents!5e0!3m2!1sen!2sin!4v1717957141776!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.2542610796136!2d77.52776642412009!3d12.955575265231332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e7055436bcd%3A0xa9dcfbd5f803bd12!2sVijaynagar%2C%20RPC%20Layout%2C%20Attiguppe%2C%20Bengaluru%2C%20Karnataka%20560040!5e0!3m2!1sen!2sin!4v1731642059906!5m2!1sen!2sin"
               
               style={{ border: 0,width:"500",
                 height:"300" }}

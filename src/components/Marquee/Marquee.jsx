@@ -24,7 +24,7 @@ const Marquee = () => {
 
   return (
     <div className={`marquee ${theme==='dark'?'dark-theme':'light-theme'}`}>
-        <p>{greetingMsg()} Welcome to my portfolio! Explore my projects, skills, and Achievements.</p>
+        <p>{greetingMsg()} Welcome to my portfolio! Feel free to explore my projects and skills.</p>
     </div>
   )
 }

@@ -58,11 +58,11 @@ const Navbar = () => {
         <Link activeClass='active' onClick={() => {
             toggleMenu();
             handleToggle();
-          }} to='portfolio' smooth={true} offset={-140} duration={500}  className='desktopMenuListItem'    >Portfolio</Link>
-        <Link activeClass='active' onClick={() => {
+          }} to='portfolio' smooth={true} offset={-140} duration={500}  className='desktopMenuListItem'    >Projects</Link>
+        {/* <Link activeClass='active' onClick={() => {
             toggleMenu();
             handleToggle();
-          }} to='slid' smooth={true} offset={-140} duration={500}  className='desktopMenuListItem'    >Achievements</Link>
+          }} to='slid' smooth={true} offset={-140} duration={500}  className='desktopMenuListItem'    >Achievements</Link> */}
       <Link to='contact' onClick={() => {
             toggleMenu();
             handleToggle();
